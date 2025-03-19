@@ -120,7 +120,9 @@ extension PullRequestsTableViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        guard let url = viewModel.model?[safe: indexPath.row]?.htmlUrl else { return }
+        let viewController = DetailsPullRequestViewController(url: url)
+        present(viewController, animated: true)
     }
 }
 
