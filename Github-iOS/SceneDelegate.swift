@@ -16,7 +16,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         self.window = UIWindow(windowScene: windowScene)
         
-        let navigationController = UINavigationController(rootViewController: ReposytoryTableViewController())
+        let viewModel = RepositoryViewModel()
+        let rootViewController = ReposytoryTableViewController(viewModel: viewModel)
+        let navigationController = UINavigationController(rootViewController: rootViewController)
         
         self.window?.rootViewController = navigationController
         self.window?.makeKeyAndVisible()
