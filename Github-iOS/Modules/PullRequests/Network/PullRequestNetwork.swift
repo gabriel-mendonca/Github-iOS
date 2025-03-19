@@ -42,7 +42,7 @@ extension APIHomeEndPoint: EndPointType {
     }
 }
 
-final class PullRequestNetwork: NetworkManager {
+class PullRequestNetwork: NetworkManager {
     
     internal let router = Router<APIHomeEndPoint>()
     

@@ -13,7 +13,6 @@
 		85BD2E412D84F30400D55316 /* ReposytoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BD2E402D84F30400D55316 /* ReposytoryTableViewController.swift */; };
 		85BD2E462D84F30500D55316 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85BD2E452D84F30500D55316 /* Assets.xcassets */; };
 		85BD2E492D84F30500D55316 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 85BD2E482D84F30500D55316 /* Base */; };
-		85BD2E542D84F30500D55316 /* Github_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BD2E532D84F30500D55316 /* Github_iOSTests.swift */; };
 		85BD2E5E2D84F30500D55316 /* Github_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BD2E5D2D84F30500D55316 /* Github_iOSUITests.swift */; };
 		85BD2E602D84F30500D55316 /* Github_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BD2E5F2D84F30500D55316 /* Github_iOSUITestsLaunchTests.swift */; };
 		85BD2E752D86014000D55316 /* ViewLayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BD2E742D86014000D55316 /* ViewLayoutHelper.swift */; };
@@ -41,6 +40,14 @@
 		85C383322D8AFD4400FBAD5C /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C383312D8AFD4400FBAD5C /* EmptyView.swift */; };
 		85C383352D8B132300FBAD5C /* DetailsPullRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C383342D8B132300FBAD5C /* DetailsPullRequestViewController.swift */; };
 		85C383392D8B36F000FBAD5C /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C383382D8B36F000FBAD5C /* String+Extension.swift */; };
+		85C3833F2D8B3BD200FBAD5C /* RepositoryViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C3833E2D8B3BD200FBAD5C /* RepositoryViewModelTests.swift */; };
+		85C383422D8B3D5200FBAD5C /* StubNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C383412D8B3D5200FBAD5C /* StubNetworkService.swift */; };
+		85C383442D8B492600FBAD5C /* MakeDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C383432D8B492600FBAD5C /* MakeDummy.swift */; };
+		85C383462D8B4B6B00FBAD5C /* RepositoryDelegateSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C383452D8B4B6B00FBAD5C /* RepositoryDelegateSpy.swift */; };
+		85C383492D8B536600FBAD5C /* PullRequestViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C383482D8B536600FBAD5C /* PullRequestViewModelTests.swift */; };
+		85C3834C2D8B53B800FBAD5C /* PullRequestStubNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C3834B2D8B53B800FBAD5C /* PullRequestStubNetworkService.swift */; };
+		85C3834E2D8B542C00FBAD5C /* PullRequestMakeDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C3834D2D8B542C00FBAD5C /* PullRequestMakeDummy.swift */; };
+		85C383502D8B569900FBAD5C /* PullRequestDelegateSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C3834F2D8B569900FBAD5C /* PullRequestDelegateSpy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,7 +77,6 @@
 		85BD2E482D84F30500D55316 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85BD2E4A2D84F30500D55316 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85BD2E4F2D84F30500D55316 /* Github-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Github-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		85BD2E532D84F30500D55316 /* Github_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Github_iOSTests.swift; sourceTree = "<group>"; };
 		85BD2E592D84F30500D55316 /* Github-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Github-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85BD2E5D2D84F30500D55316 /* Github_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Github_iOSUITests.swift; sourceTree = "<group>"; };
 		85BD2E5F2D84F30500D55316 /* Github_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Github_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -99,6 +105,14 @@
 		85C383312D8AFD4400FBAD5C /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 		85C383342D8B132300FBAD5C /* DetailsPullRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPullRequestViewController.swift; sourceTree = "<group>"; };
 		85C383382D8B36F000FBAD5C /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		85C3833E2D8B3BD200FBAD5C /* RepositoryViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryViewModelTests.swift; sourceTree = "<group>"; };
+		85C383412D8B3D5200FBAD5C /* StubNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubNetworkService.swift; sourceTree = "<group>"; };
+		85C383432D8B492600FBAD5C /* MakeDummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeDummy.swift; sourceTree = "<group>"; };
+		85C383452D8B4B6B00FBAD5C /* RepositoryDelegateSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDelegateSpy.swift; sourceTree = "<group>"; };
+		85C383482D8B536600FBAD5C /* PullRequestViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestViewModelTests.swift; sourceTree = "<group>"; };
+		85C3834B2D8B53B800FBAD5C /* PullRequestStubNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestStubNetworkService.swift; sourceTree = "<group>"; };
+		85C3834D2D8B542C00FBAD5C /* PullRequestMakeDummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestMakeDummy.swift; sourceTree = "<group>"; };
+		85C3834F2D8B569900FBAD5C /* PullRequestDelegateSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestDelegateSpy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,7 +184,7 @@
 		85BD2E522D84F30500D55316 /* Github-iOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				85BD2E532D84F30500D55316 /* Github_iOSTests.swift */,
+				85C3833C2D8B3BB500FBAD5C /* FeaturesTests */,
 			);
 			path = "Github-iOSTests";
 			sourceTree = "<group>";
@@ -402,6 +416,53 @@
 			path = LaunchScreen;
 			sourceTree = "<group>";
 		};
+		85C3833C2D8B3BB500FBAD5C /* FeaturesTests */ = {
+			isa = PBXGroup;
+			children = (
+				85C383472D8B534800FBAD5C /* PullRequests */,
+				85C3833D2D8B3BC000FBAD5C /* Repository */,
+			);
+			path = FeaturesTests;
+			sourceTree = "<group>";
+		};
+		85C3833D2D8B3BC000FBAD5C /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				85C383402D8B3D2D00FBAD5C /* Doubles */,
+				85C3833E2D8B3BD200FBAD5C /* RepositoryViewModelTests.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		85C383402D8B3D2D00FBAD5C /* Doubles */ = {
+			isa = PBXGroup;
+			children = (
+				85C383412D8B3D5200FBAD5C /* StubNetworkService.swift */,
+				85C383432D8B492600FBAD5C /* MakeDummy.swift */,
+				85C383452D8B4B6B00FBAD5C /* RepositoryDelegateSpy.swift */,
+			);
+			path = Doubles;
+			sourceTree = "<group>";
+		};
+		85C383472D8B534800FBAD5C /* PullRequests */ = {
+			isa = PBXGroup;
+			children = (
+				85C3834A2D8B53A800FBAD5C /* Doubles */,
+				85C383482D8B536600FBAD5C /* PullRequestViewModelTests.swift */,
+			);
+			path = PullRequests;
+			sourceTree = "<group>";
+		};
+		85C3834A2D8B53A800FBAD5C /* Doubles */ = {
+			isa = PBXGroup;
+			children = (
+				85C3834B2D8B53B800FBAD5C /* PullRequestStubNetworkService.swift */,
+				85C3834D2D8B542C00FBAD5C /* PullRequestMakeDummy.swift */,
+				85C3834F2D8B569900FBAD5C /* PullRequestDelegateSpy.swift */,
+			);
+			path = Doubles;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -568,7 +629,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85BD2E542D84F30500D55316 /* Github_iOSTests.swift in Sources */,
+				85C383462D8B4B6B00FBAD5C /* RepositoryDelegateSpy.swift in Sources */,
+				85C383442D8B492600FBAD5C /* MakeDummy.swift in Sources */,
+				85C3833F2D8B3BD200FBAD5C /* RepositoryViewModelTests.swift in Sources */,
+				85C3834C2D8B53B800FBAD5C /* PullRequestStubNetworkService.swift in Sources */,
+				85C3834E2D8B542C00FBAD5C /* PullRequestMakeDummy.swift in Sources */,
+				85C383502D8B569900FBAD5C /* PullRequestDelegateSpy.swift in Sources */,
+				85C383422D8B3D5200FBAD5C /* StubNetworkService.swift in Sources */,
+				85C383492D8B536600FBAD5C /* PullRequestViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -748,6 +816,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gabriel-mendonca.Github-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -775,6 +847,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gabriel-mendonca.Github-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -794,6 +870,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gabriel-mendonca.Github-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -814,6 +894,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gabriel-mendonca.Github-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

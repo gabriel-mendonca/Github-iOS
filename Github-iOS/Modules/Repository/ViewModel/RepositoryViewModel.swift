@@ -23,7 +23,7 @@ protocol RepositoryViewModelDelegate: AnyObject {
 
 final class RepositoryViewModel: RepositoryViewModelProtocol {
     
-    private let manager = RepositoryNetworkAPI()
+    private let manager: RepositoryNetworkAPI
     weak var delegate: RepositoryViewModelDelegate?
     var model: [Repository]? = []
     var language = "swift"
@@ -31,6 +31,9 @@ final class RepositoryViewModel: RepositoryViewModelProtocol {
     var pages = 1
     var hasEndPage: Bool = false
     
+    init(manager: RepositoryNetworkAPI = RepositoryNetworkAPI()) {
+        self.manager = manager
+    }
     
     func fetchRepository() {
         delegate?.didStartingLoading()
