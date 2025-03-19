@@ -7,17 +7,8 @@
 
 import Foundation
 
-
 struct RepositorySearchResponse: Codable {
-    let totalCount: Int?
-    let incompleteResults: Bool?
     let items: [Repository]?
-    
-    enum CodingKeys: String, CodingKey {
-        case totalCount = "total_count"
-        case incompleteResults = "incomplete_results"
-        case items
-    }
 }
 
 struct Repository: Codable {
@@ -27,16 +18,12 @@ struct Repository: Codable {
     let owner: Owner?
     let description: String?
     let stargazersCount: Int?
-    let language: String?
-    let htmlURL: String?
-    let fork: Bool?
     let forks: Int?
     
     enum CodingKeys: String, CodingKey {
-        case id, name, owner, description, language, fork, forks
+        case id, name, owner, description, forks
         case fullName = "full_name"
         case stargazersCount = "stargazers_count"
-        case htmlURL = "html_url"
     }
 }
 

@@ -96,7 +96,12 @@ extension ReposytoryTableViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        guard let model = viewModel.model?[safe: indexPath.row] else { return }
+        let createRepository = model.owner?.login ?? ""
+        let repository = model.name ?? ""
+        let viewModel = PullRequestsViewModel(create: createRepository, repository: repository)
+        let viewController = PullRequestsTableViewController(viewModel: viewModel)
+        navigationController?.pushViewController(viewController, animated: true)
     }
     
 }

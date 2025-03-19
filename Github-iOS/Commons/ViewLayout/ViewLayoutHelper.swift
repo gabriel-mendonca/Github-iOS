@@ -21,4 +21,6 @@ extension ViewLayoutHelper {
         setupContraints()
         setupAdditionalConfiguration()
     }
+    
+    func setupAdditionalConfiguration() {}
 }
