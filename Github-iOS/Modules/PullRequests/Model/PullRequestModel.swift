@@ -13,11 +13,13 @@ struct PullRequestModel: Codable {
     let title: String?
     let body: String?
     let createdAt: String?
+    let htmlUrl: String?
     let user: User?
 
     enum CodingKeys: String, CodingKey {
         case title, body
         case createdAt = "created_at"
+        case htmlUrl = "html_url"
         case user
     }
 }

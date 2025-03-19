@@ -79,7 +79,7 @@ final class PullRequestCell: UITableViewCell {
         descriptionPullRequest.text = model.body
         photoUser.renderImageView(urlImage: model.user?.avatarUrl ?? "")
         userName.text = model.user?.login
-        datePR.text = model.createdAt
+        datePR.text = model.createdAt?.toDayMonthYearFormat()
     }
 }
 
