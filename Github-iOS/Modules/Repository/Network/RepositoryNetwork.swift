@@ -50,7 +50,7 @@ extension APIHomeEndPoints: EndPointType {
     }
 }
 
-final class RepositoryNetworkAPI: NetworkManager {
+class RepositoryNetworkAPI: NetworkManager {
     
     internal let router = Router<APIHomeEndPoints>()
     

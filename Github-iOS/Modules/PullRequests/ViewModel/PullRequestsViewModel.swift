@@ -28,9 +28,11 @@ final class PullRequestsViewModel: PullRequestsViewModelProtocol {
     var repository: String
     
     private var create: String
-    private var manager = PullRequestNetwork()
+    private var manager: PullRequestNetwork
     
-    init(create: String, repository: String) {
+    init(manager: PullRequestNetwork = PullRequestNetwork(),
+             create: String, repository: String) {
+        self.manager = manager
         self.create = create
         self.repository = repository
     }
